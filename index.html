@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>StateSync</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <section class="screen" id="screen-splash">
+        <div>
+          <h1>STATESYNC</h1>
+          <p id="splash-sub">state sync</p>
+          <div class="splash-line"></div>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-privacy">
+        <div class="gate">
+          <div class="brand-mark" id="brand-tap">STATESYNC</div>
+          <h2 id="privacy-title">Політика конфіденційності</h2>
+          <div class="card">
+            <p id="privacy-body"></p>
+          </div>
+          <label class="check">
+            <input type="checkbox" id="privacy-check" />
+            <span id="privacy-check-label"></span>
+          </label>
+          <button class="btn btn-primary" id="privacy-btn" disabled>Підтвердити</button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-bind">
+        <div class="gate">
+          <div class="brand-mark">STATESYNC</div>
+          <h2 id="bind-title">Прив’язка акаунта</h2>
+          <div class="card mb">
+            <p id="bind-hint"></p>
+          </div>
+          <button class="btn btn-primary" id="btn-bind-roblox">Прив’язати Roblox</button>
+          <button class="btn btn-ghost" id="btn-guest">Продовжити в гостьовому режимі</button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-app">
+        <header class="topbar">
+          <div class="code-chip">
+            <span id="server-code-label">6sez7maz</span>
+            <button type="button" id="copy-code">copy</button>
+          </div>
+          <button class="avatar-btn" id="avatar-btn" type="button"></button>
+        </header>
+        <main class="content" id="view-root"></main>
+        <nav class="nav" id="nav"></nav>
+      </section>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="sheet" id="sheet"></div>
+    </div>
+    <div class="toast" id="toast"></div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
